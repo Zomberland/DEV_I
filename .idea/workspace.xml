@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a53e25f-bd90-4e9e-a98c-d6fe0bffb734" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web_system/aula/enumerations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/aula/enumerations/genero.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/aula/models/Perfil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/aula/models/Tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/db.sqlite3" afterDir="false" />
+    <list default="true" id="3771cebd-bb64-4b36-b9ac-2f08033cdad7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/DEV_I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DEV_I.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,9 +28,10 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="31s8ZgjrZeInquTb5ivG0D8ID6j" />
+  <component name="ProjectId" id="31sJizWXMWrb8DOMZT0cvhAt26T" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "last_opened_file_path": "C:/Users/Teste/PycharmProjects/DEV_I"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -64,11 +54,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a53e25f-bd90-4e9e-a98c-d6fe0bffb734" name="Changes" comment="" />
-      <created>1756301477740</created>
+      <changelist id="3771cebd-bb64-4b36-b9ac-2f08033cdad7" name="Changes" comment="" />
+      <created>1756306977830</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1756301477740</updated>
+      <updated>1756306977830</updated>
     </task>
     <servers />
   </component>

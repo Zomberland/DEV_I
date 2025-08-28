@@ -1,7 +1,6 @@
 from django.contrib import admin
 from aula.models import Atividade
-
-from web_system.aula.models.Perfil import Perfil
+from aula.models.perfil import Perfil, PerfilAdmin
 
 admin.site.register(Atividade)
-admin.site.register(Perfil)
+admin.site.register(Perfil, PerfilAdmin)

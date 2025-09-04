@@ -5,18 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3771cebd-bb64-4b36-b9ac-2f08033cdad7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DEV_I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DEV_I.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/base_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/validators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/validators/funcoes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/aula/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/aula/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/aula/models/Perfil.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/aula/models/perfil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/aula/models/Tags.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/aula/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/aula/migrations/0002_perfil_atividade_nota_atividade_preco_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/aula/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/aula/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/aula/models/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/aula/models/perfil.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/aula/models/perfil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/db.sqlite3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,12 +38,12 @@
     &quot;assignee&quot;: &quot;Zomberland&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Zomberland/DEV_I.git",
-    "accountId": "99178260-1fa5-4580-b5f5-61171383d575"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Zomberland/DEV_I.git&quot;,
+    &quot;accountId&quot;: &quot;969693c5-ff7b-41a1-b084-b8eddf6e9973&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -51,6 +62,12 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Teste/PycharmProjects/DEV_I&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dti\PycharmProjects\DEV_I\web_system\relacionamentos" />
+      <recent name="C:\Users\dti\PycharmProjects\DEV_I\web_system\relacionamentos\models" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

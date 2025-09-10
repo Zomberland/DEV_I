@@ -1,6 +1,9 @@
 from django.contrib import admin
-from relacionamento.models import Person
-from relacionamento.models.perfil import Perfil, PerfilAdmin
+from relacionamentos.models import Person
+from relacionamentos.models import Article
+from relacionamentos.models import Reporter
 
 # Register your models here.
 admin.site.register(Person)
+admin.site.register(Article)
+admin.site.register(Reporter)

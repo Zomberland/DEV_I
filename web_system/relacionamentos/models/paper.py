@@ -1,12 +1,12 @@
 from datetime import date
 from django.core.exceptions import ValidationError
 from django.db import models
-from .base_model import BaseModel
 from .magazine import Magazine
+from .base_model import BaseModel
 from .reporter import Reporter
 
 
-class Article(BaseModel):
+class Paper(BaseModel):
     title = models.CharField(max_length = 100,
                              verbose_name= 'title',
                              help_text=('insira o titulo de reportagem'))
@@ -14,7 +14,7 @@ class Article(BaseModel):
     reporter = models.ForeignKey(Reporter, on_delete= models.RESTRICT,)
     magazine = models.ManyToManyField(Magazine, null=True, blank=True,
                                       through="Publication",
-                                      through_fields=("article","magazine"))
+                                      through_fields=("paper","magazine"))
 
     def __str__(self):
         return f"{self.title} by {self.reporter.nome if self.reporter is not None else ''}"

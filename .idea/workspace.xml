@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3771cebd-bb64-4b36-b9ac-2f08033cdad7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/managers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/managers/base_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/managers/reporter_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/magazine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/paper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/publication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DEV_I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DEV_I.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/views/estatica.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/aula/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/aula/migrations/0002_alter_perfil_genero.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/aula/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/managers/base_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/managers/base_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/views/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/models/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/models/article.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/web_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Zomberland/DEV_I.git",
-    "accountId": "f5a2ed42-08db-449a-b615-c77cfd2a0775"
+    "accountId": "91fd05be-4045-413d-9f66-090a737a4608"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -74,7 +75,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
       </set>
     </attachedChunks>
   </component>
@@ -99,6 +100,19 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/web_system/aula/models/atividade.py</url>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/web_system/relacionamentos/managers/reporter_manager.py</url>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/web_system/relacionamentos/models/__init__.py</url>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/web_system/relacionamentos/admin.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

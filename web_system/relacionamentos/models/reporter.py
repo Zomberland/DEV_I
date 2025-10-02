@@ -2,6 +2,7 @@ from django.db import models
 from .base_model import BaseModel
 from relacionamentos.validators import validate_cpf
 from django.core.validators import MinLengthValidator
+from relacionamentos.managers import ReporterManager
 
 
 class Reporter(BaseModel):
@@ -15,6 +16,8 @@ class Reporter(BaseModel):
                            help_text=('Digite seu cpf sem os pontos'),)
 
     email = models.CharField(max_length = 255,)
+
+    objects = ReporterManager()
 
     def __str__(self):
         return self.nome

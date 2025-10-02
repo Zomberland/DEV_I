@@ -14,12 +14,12 @@ def validate_cpf(valor: str) -> None:
     if len(valor) != 11:
         raise ValidationError(_("CPF deve conter 11 digitos"),
                               code="invalid_length",
-                              parans={"valor": valor}, )
+                              params={"valor": valor}, )
 
     if valor == valor[0] * 11:
         raise ValidationError(_("CPF invalido"),
                               code="invalid",
-                              parans={"valor": valor}, )
+                              params={"valor": valor}, )
 
     d1 = _calcular_digito(valor[:9])
     d2 = _calcular_digito(valor[:10])
@@ -27,4 +27,4 @@ def validate_cpf(valor: str) -> None:
     if (valor[9] + valor[10]) != (d1 + d2):
         raise ValidationError(_("CPF invalido"),
                               code="invalid",
-                              parans={"valor": valor}, )
+                              params={"valor": valor}, )

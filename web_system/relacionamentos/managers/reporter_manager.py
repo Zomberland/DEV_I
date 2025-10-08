@@ -3,7 +3,7 @@ from .base_manager import BaseManager
 from datetime import date
 
 class ReporterManager(BaseManager):
-    def find_by_nome(self,nome: str)->list['Reporter']:
+    def find_by_name(self,nome: str)->list['Reporter']:
         if isinstance(nome , str) and len(nome)> 0:
             consulta = self.filter(nome__icontains=nome).order_by('nome')[:2]
             return list(consulta)

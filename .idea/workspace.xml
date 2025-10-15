@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3771cebd-bb64-4b36-b9ac-2f08033cdad7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web_system/templates/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/web_system/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/web_system/views/estatica.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/primeira.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/saudacao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/DEV_I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DEV_I.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/views/nome_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/views/nome_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/web_system/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/web_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/views/estatica.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/views/estatica.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/templates/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,7 +39,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Zomberland/DEV_I.git",
-    "accountId": "8b1c3c66-2d5b-427b-96e4-f668b001cb32"
+    "accountId": "f8132c3c-6230-43d6-98e1-40681733d7d2"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -52,16 +51,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Teste/PycharmProjects/DEV_I&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Teste/PycharmProjects/DEV_I"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Teste\PycharmProjects\DEV_I\web_system\relacionamentos\models" />
@@ -73,7 +73,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
       </set>
     </attachedChunks>
   </component>

@@ -6,8 +6,12 @@ from django.http import JsonResponse
 
 
 def primeira_view(request):
-    mensagem = "Bom dia DEV I"
-    return HttpResponse(mensagem, status=200)
+    #mensagem = "Bom dia DEV I"
+    contexto = {
+        'mensagem': "Bom dia DEV I"
+    }
+    #return HttpResponse(mensagem, status=200)
+    return render(request, 'primeira.html', contexto)
 
 def saudacao(request):
     agora = datetime.now()
@@ -20,7 +24,8 @@ def saudacao(request):
     completo = f"<html><body><h1>{mensagem.capitalize()} visitante" \
                f"<br />{agora}</h1>{request.META["REMOTE_ADDR"]}</body></html>"
 
-    return HttpResponse(completo)
+    #return HttpResponse(completo)
+    return render(request, 'saudacao.html', {completo: 'mensagem'})
 
 def nome(request, name):
     exemplo = Reporter.objects.find_by_nome(name)

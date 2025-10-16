@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+    {% block title %}
+        {% if reporter %}
+            <h1>Lista de Reporter </h1>
+        {% else %}
+            <h1>Nenhum Reporter Cadastrado </h1>
+        {% endif %}
+    {% endblock title %}
+    {% block content %}
+
+    {% if reporter %}
+        <table class="table table-hover">
+            <thead>
+            <th>#</th>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Ações Funções</th>
+            <th>Ações Classes</th>
+        </thead>
+        <tbody>
+        {% for reporterr in reporter %}
+            <tr>
+                <td>{{ reporterr.nome }}</td>
+                <td>{{ reporterr.cod }}</td>
+                <td>{{ reporterr.nome }}</td>
+                <td>
+                    <div>
+                        <a class="btn btn-outline-secondary btn-lg" role="button"
+                           data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Detalhar com Funções"
+                        href="{% url 'relacionamentos:reporter_funcao_read' reporter.id %}">
+                            <i class="bi bi-card-list"></i></a>
+                    </div>
+
+                </td>
+                <td>
+                    <div>
+                        Botões de Classe aqui
+
+                    </div>
+                </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+
+    {% endblock content %}

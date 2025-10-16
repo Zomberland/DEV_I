@@ -15,17 +15,25 @@ def primeira_view(request):
 
 def saudacao(request):
     agora = datetime.now()
-    mensagem = "boa noite"
-    if 12 > agora.hour > 6:
+
+    hora = agora.hour
+    if 6 < hora < 12:
         mensagem = "bom dia"
-    elif 0 < agora.hour <= 6:
+    elif 0 < hora <= 6:
         mensagem = "boa madrugada"
+    elif 12 <= hora < 18:
+        mensagem = "boa tarde"
+    else:
+        mensagem = "boa noite"
 
-    completo = f"<html><body><h1>{mensagem.capitalize()} visitante" \
-               f"<br />{agora}</h1>{request.META["REMOTE_ADDR"]}</body></html>"
+    contexto = {
+        'mensagem': mensagem.capitalize(),
+        'hora_atual': agora.strftime('%H:%M:%S'),
+        'data_atual': agora.strftime('%d/%m/%Y'),
+        'ip': request.META.get('REMOTE_ADDR', 'IP não identificado')
+    }
 
-    #return HttpResponse(completo)
-    return render(request, 'saudacao.html', {completo: 'mensagem'})
+    return render(request, 'saudacao.html', contexto)
 
 def nome(request, name):
     exemplo = Reporter.objects.find_by_nome(name)

@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.views import View
 
 class PrimeiraView(View):
-    @staticmethod
-    def get(request):
-        mensagem = request.META['REMOTE_ADDR']
-        return HttpResponse(mensagem, status=200)
+    def get(self, request):
+        contexto = {
+            'mensagem': request.META.get('REMOTE_ADDR', 'IP não identificado')
+        }
+        return render(request, 'primeira_view_classe.html', contexto)

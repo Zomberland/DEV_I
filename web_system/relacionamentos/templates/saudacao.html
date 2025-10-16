@@ -5,5 +5,8 @@
 {% endblock title %}
 
 {% block content %}
-  <h2> {{ completo|capfirst }} </h2>
+  <h2> {{ mensagem }}</h2>
+  <p>Data: {{ data_atual }}</p>
+  <p>Hora: {{ hora_atual }}</p>
+  <p>Seu IP: {{ ip }}</p>
 {% endblock content %}

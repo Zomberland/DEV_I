@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <h1> Saudação </h1>
+{% endblock title %}
+
+{% block content %}
+  <h2> {{ mensagem }}</h2>
+  <p>Data: {{ data_atual }}</p>
+  <p>Hora: {{ hora_atual }}</p>
+  <p>Seu IP: {{ ip }}</p>
+{% endblock content %}

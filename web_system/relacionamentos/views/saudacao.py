@@ -4,16 +4,24 @@ from django.views import View
 from datetime import datetime
 
 class SaudacaoView(View):
-    @staticmethod
-    def get(request):
+    def get(self, request):
         agora = datetime.now()
-        mensagem = "Boa noite"
-        if 12 > agora.hour > 6:
+        hora = agora.hour
+
+        if 6 < hora < 12:
             mensagem = "Bom dia"
-        elif 0 < agora.hour <= 6:
+        elif 0 < hora <= 6:
             mensagem = "Boa madrugada"
+        elif 12 <= hora < 18:
+            mensagem = "Boa tarde"
+        else:
+            mensagem = "Boa noite"
 
-        completo = (f"<html><body><h1>{mensagem.capitalize()}"
-                    f"<br />{agora}</h1></body></html>")
+        contexto = {
+            'mensagem': mensagem,
+            'hora_atual': agora.strftime('%H:%M:%S'),
+            'data_atual': agora.strftime('%d/%m/%Y'),
+            'ip': request.META.get('REMOTE_ADDR', 'IP não identificado')
+        }
 
-        return HttpResponse(completo)
+        return render(request, 'saudacao_classe.html', contexto)

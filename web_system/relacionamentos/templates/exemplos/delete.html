@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}
+    <h1>{{ reporter.name }}</h1>
+{% endblock title %}
+{% block content %}
+    <div class="content">
+        <div class="row">
+            <strong>Código:</strong>
+            <p>{{ reporter.id }}</p>
+            <strong>Nome:</strong>
+            <p>{{ reporter.name }}</p>
+        </div>
+    </div>
+    <strong>Ação irreversivel</strong>
+    <p>Você realmente quer fazer a deleção?</p>
+    <form id= "reporter"
+          action="{% url 'relacionamentos:reporter_funcao_delete' reporter.id %}"
+          method="post">
+        {% csrf_token %}
+        <input type="hidden" id="reporter.id" name="reporter_id"
+               value="{{ reporter.id }}">
+        <button type="submit" class="btn btn-outline-danger btn-lg"
+                form="reporter" value="Deletar"><i class="bi bi-trash3"></i>
+        Sim , deletar</button>
+        <a class="btn btn-outline-secondary btn-lg" role="button"
+           href="{% url 'relacionamentos:reporter_funcao_list' %}">
+            <i class="bi bi-x-lg"></i>
+            Cancelar</a>
+
+    </form>
+{% endblock content %}

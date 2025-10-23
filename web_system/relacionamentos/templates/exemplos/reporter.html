@@ -28,6 +28,16 @@
                     <div>
                         <a class="btn btn-outline-secondary btn-lg" role="button"
                            data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Criar com Funções"
+                        href="{% url 'relacionamentos:reporter_funcao_create' %}">
+                            <i class="bi bi-plus-square"></i></a>
+                        <a class="btn btn-outline-secondary btn-lg" role="button"
+                           data-bs-toggle="tooltip" data-bs-placement="top"
+                           title="Update com Funções"
+                        href="{% url 'relacionamentos:reporter_funcao_update' reporterr.id %}">
+                            <i class="bi bi-arrow-up-circle"></i></a>
+                        <a class="btn btn-outline-secondary btn-lg" role="button"
+                           data-bs-toggle="tooltip" data-bs-placement="top"
                            title="Detalhar com Funções"
                         href="{% url 'relacionamentos:reporter_funcao_read' reporterr.id %}">
                             <i class="bi bi-card-list"></i></a>
@@ -40,7 +50,7 @@
                            data-bs-toggle="tooltip" data-bs-placement="top"
                            title="Gerar codigo com Funções"
                         href="{% url 'relacionamentos:reporter_gerar_codigo' reporterr.id %}">
-                            <i class="bi bi-trash"></i></a>
+                            <i class="bi bi-box"></i></a>
                     </div>
 
                 </td>

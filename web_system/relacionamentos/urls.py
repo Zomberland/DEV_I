@@ -4,7 +4,7 @@ from relacionamentos.views import PrimeiraView
 from relacionamentos.views import SaudacaoView
 from relacionamentos.views import NomeView
 from relacionamentos.views.reporter import reporter_list, reporter_detail, reporter_delete, gerar_codigo, reporter_create, reporter_update
-from relacionamentos.views.reporter_classes import ReporterListView, ReporterDetailView
+from relacionamentos.views.reporter_classes import ReporterListView, ReporterDetailView, ReporterGerarCodigoView, ReporterDeleteView, ReporterCreateView
 #mesma coisa que o appname
 app_name = 'relacionamentos'
 
@@ -42,5 +42,11 @@ urlpatterns = [
     path('reporter/classe', ReporterListView.as_view(), name="reporter_classe_list"),
 
     path('reporter/classe/read/<int:pk>', ReporterDetailView.as_view(), name="reporter_classe_detail"),
+
+    path('reporter/classe/gerar_codigo/<int:reporter_id>', ReporterGerarCodigoView.as_view(), name="reporter_classe_gerar_codigo"),
+
+    path('reporter/classe/delete/<int:reporter_id>', ReporterDeleteView.as_view(), name="reporter_classe_delete"),
+
+    path('reporter/classe/create', ReporterCreateView.as_view(), name = 'reporter_classe_create'),
 
 ]

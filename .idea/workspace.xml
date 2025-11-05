@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3771cebd-bb64-4b36-b9ac-2f08033cdad7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DEV_I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DEV_I.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/web_system/forms/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/web_system/forms/contato_form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/web_system/views/contato.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/templates/exemplos/reporter.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/exemplos/reporter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/views/reporter_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/views/reporter_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/web_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Zomberland/DEV_I.git",
-    "accountId": "b2457a9d-65e4-4b54-abff-ee7ab2e7e150"
+    "accountId": "12d36bb6-e10b-4d9d-9d70-7adccc847ec0"
   }
 }]]></component>
   <component name="ProjectColorInfo">{

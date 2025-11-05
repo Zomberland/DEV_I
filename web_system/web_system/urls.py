@@ -27,4 +27,7 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
 
+    #path('funcao/search/', views.buscar, name='funcao_search'),
+
+    path('funcao/contato/',views.contato, name='funcao_contato'),
 ]

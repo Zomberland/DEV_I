@@ -18,5 +18,5 @@ class ContatoForm(forms.Form):
     def __init__(self, *args, **kwargs):
         super(ContatoForm, self).__init__(*args, **kwargs)
         for new_field in self.visible_fields():
-            new_field.widget.attrs.update({'class': 'form-control'})
+            new_field.field.widget.attrs.update({'class': 'form-control'})
         self.fields.get('cc_myself').widget.attrs.pop('class')

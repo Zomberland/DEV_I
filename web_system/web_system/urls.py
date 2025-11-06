@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from web_system import views
 from django.conf.urls import include
+from web_system.views.contato_classe import ContatoView
+from web_system.forms.custom_login_form import CustomLoginForm
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('',views.index, name='index'),
@@ -30,4 +33,12 @@ urlpatterns = [
     #path('funcao/search/', views.buscar, name='funcao_search'),
 
     path('funcao/contato/',views.contato, name='funcao_contato'),
+
+    path('classe/contato/',ContatoView.as_view(), name='classe_contato'),
+
+    path('accounts/login/', auth_views.LoginView.as_view(
+        template_name="accounts/login.html",
+        authentication_form=CustomLoginForm)),
+
+    path('accounts/', include('django.contrib.auth.urls')),
 ]

@@ -1,7 +1,6 @@
-from web_system.forms.contato_form import ContatoForm
+from django.views import View
 from django.shortcuts import render
-from django.views import Views
-
+from web_system.forms.contato_form import ContatoForm
 
 def contato(request):
     if request.method == 'POST':
@@ -15,19 +14,19 @@ def contato(request):
             recipients = ['2020008663@restinga.ifrs.edu.br']
             if cc_myself:
                 recipients.append(sender)
-                #TODO: configurar o settings.py com as credenciais
-                #chamada para enviar email
-                #send_email(subject, message, sender, recipients)
-                context = {
-                    'recipients': recipients,
-                    'form': form,
-                }
-                return render(request, 'contato/pagina_contato.html', context)
-            elif request.method == 'GET':
-                form = ContatoForm()
-                context = {
-                    'form': form,
-                    'url_form': 'funcao_contato',
+            #TODO: configurar o settings.py com as credenciais
+            #chamada para enviar email
+            #send_email(subject, message, sender, recipients)
+            context = {
+                'recipients': recipients,
+                'form': form,
+            }
+            return render(request, 'contato/exibicao.html', context)
+    elif request.method == 'GET':
+        form = ContatoForm()
+        context = {
+            'form': form,
+            'url_form': 'funcao_contato',
 
-                }
-                return render(request, 'contato/pagina_contato.html', context)
+        }
+        return render(request, 'contato/pagina_contato.html', context)

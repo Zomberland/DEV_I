@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3771cebd-bb64-4b36-b9ac-2f08033cdad7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web_system/web_system/forms/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/web_system/forms/contato_form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/web_system/views/contato.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/accounts/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/contato/exibicao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/contato/pagina_contato.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/web_system/forms/custom_login_form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_system/web_system/views/contato_classe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DEV_I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DEV_I.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/web_system/forms/contato_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/forms/contato_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/web_system/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_system/web_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/web_system/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/views/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/web_system/views/contato.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/views/contato.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,7 +44,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Zomberland/DEV_I.git",
-    "accountId": "12d36bb6-e10b-4d9d-9d70-7adccc847ec0"
+    "accountId": "587a32b2-818d-4f21-ae98-a533f7b1d1d5"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -61,6 +69,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dti\PycharmProjects\DEV_I\web_system\relacionamentos\templates\contato" />
       <recent name="C:\Users\Teste\PycharmProjects\DEV_I\web_system\relacionamentos\models" />
       <recent name="C:\Users\Teste\PycharmProjects\DEV_I\web_system\relacionamentos" />
       <recent name="C:\Users\dti\PycharmProjects\DEV_I\web_system\relacionamentos" />
@@ -70,7 +79,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
       </set>
     </attachedChunks>
   </component>

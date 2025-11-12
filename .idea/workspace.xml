@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3771cebd-bb64-4b36-b9ac-2f08033cdad7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/accounts/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/contato/exibicao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/contato/pagina_contato.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/web_system/forms/custom_login_form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_system/web_system/views/contato_classe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/DEV_I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DEV_I.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/web_system/forms/contato_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/forms/contato_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/web_system/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/web_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/web_system/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_system/web_system/views/contato.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/web_system/views/contato.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/templates/exemplos/reporter.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/templates/exemplos/reporter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_system/relacionamentos/views/reporter.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_system/relacionamentos/views/reporter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +37,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Zomberland/DEV_I.git",
-    "accountId": "587a32b2-818d-4f21-ae98-a533f7b1d1d5"
+    "accountId": "54c50844-b184-4a73-ab48-11dd92f209cb"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -79,7 +72,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
       </set>
     </attachedChunks>
   </component>

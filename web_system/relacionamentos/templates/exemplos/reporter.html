@@ -9,11 +9,21 @@
     {% endblock title %}
     {% block content %}
         <div>
-            <a class="btn btn-outline-success btn-lg" role="button"
-               data-bs-toggle="tooltip" data-bs-placement="top"
-               title="Criar com Funções"
-               href="{% url 'relacionamentos:reporter_funcao_create' %}">
-                <i class="bi bi-plus-square"></i></a>
+            {% if perms.relacionamentos.add_reporter %}
+                <a class="btn btn-outline-success btn-lg" role="button"
+                   data-bs-toggle="tooltip" data-bs-placement="top"
+                   title="Criar com Funções"
+                   href="{% url 'relacionamentos:reporter_funcao_create' %}">
+                    <i class="bi bi-plus-square"></i> Criar com Funções </a>
+            {% endif %}
+
+            {% if perms.relacionamentos.add_reporter %}
+                <a class="btn btn-outline-info btn-lg" role="button"
+                   data-bs-toggle="tooltip" data-bs-placement="top"
+                   title="Criar com Classes"
+                   href="{% url 'relacionamentos:reporter_classe_create' %}">
+                    <i class="bi bi-plus-square"></i> Criar com Classes </a>
+            {% endif %}
         </div>
 
     {% if reporter %}
@@ -33,61 +43,67 @@
                 <td>{{ reporterr.nome }}</td>
                 <td>
                     <div>
-                        <a class="btn btn-outline-success btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Criar com Funções"
-                        href="{% url 'relacionamentos:reporter_funcao_create' %}">
-                            <i class="bi bi-plus-square"></i></a>
-                        <a class="btn btn-outline-secondary btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Update com Funções"
-                        href="{% url 'relacionamentos:reporter_funcao_update' reporterr.id %}">
-                            <i class="bi bi-arrow-up-circle"></i></a>
-                        <a class="btn btn-outline-info btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Detalhar com Funções"
-                        href="{% url 'relacionamentos:reporter_funcao_read' reporterr.id %}">
-                            <i class="bi bi-card-list"></i></a>
-                         <a class="btn btn-outline-danger btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Deletar com Funções"
-                        href="{% url 'relacionamentos:reporter_funcao_delete' reporterr.id %}">
-                            <i class="bi bi-trash"></i></a>
-                        <a class="btn btn-outline-warning btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Gerar codigo com Funções"
-                        href="{% url 'relacionamentos:reporter_gerar_codigo' reporterr.id %}">
-                            <i class="bi bi-box"></i></a>
+                        {% if perms.relacionamentos.change_reporter %}
+                            <a class="btn btn-outline-secondary btn-lg" role="button"
+                               data-bs-toggle="tooltip" data-bs-placement="top"
+                               title="Update com Funções"
+                            href="{% url 'relacionamentos:reporter_funcao_update' reporterr.id %}">
+                                <i class="bi bi-arrow-up-circle"></i></a>
+                        {% endif %}
+                        {% if perms.relacionamentos.view_reporter %}
+                            <a class="btn btn-outline-info btn-lg" role="button"
+                               data-bs-toggle="tooltip" data-bs-placement="top"
+                               title="Detalhar com Funções"
+                            href="{% url 'relacionamentos:reporter_funcao_read' reporterr.id %}">
+                                <i class="bi bi-card-list"></i></a>
+                        {% endif %}
+                        {% if perms.relacionamentos.delete_reporter %}
+                             <a class="btn btn-outline-danger btn-lg" role="button"
+                               data-bs-toggle="tooltip" data-bs-placement="top"
+                               title="Deletar com Funções"
+                            href="{% url 'relacionamentos:reporter_funcao_delete' reporterr.id %}">
+                                <i class="bi bi-trash"></i></a>
+                        {% endif %}
+                        {% if perms.relacionamentos.view_reporter %}
+                            <a class="btn btn-outline-warning btn-lg" role="button"
+                               data-bs-toggle="tooltip" data-bs-placement="top"
+                               title="Gerar codigo com Funções"
+                            href="{% url 'relacionamentos:reporter_gerar_codigo' reporterr.id %}">
+                                <i class="bi bi-box"></i></a>
+                        {% endif %}
                     </div>
 
                 </td>
                 <td>
                     <div>
-                        <a class="btn btn-outline-success btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Criar com Funções"
-                        href="{% url 'relacionamentos:reporter_classe_create' %}">
-                            <i class="bi bi-plus-square"></i></a>
-                        <a class="btn btn-outline-secondary btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Update com Funções"
-                        href="{% url 'relacionamentos:reporter_funcao_update' reporterr.id %}">
-                            <i class="bi bi-arrow-up-circle"></i></a>
-                        <a class="btn btn-outline-info btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Detalhar com Funções"
-                        href="{% url 'relacionamentos:reporter_funcao_read' reporterr.id %}">
-                            <i class="bi bi-card-list"></i></a>
-                         <a class="btn btn-outline-danger btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Deletar com Classes"
-                        href="{% url 'relacionamentos:reporter_classe_delete' reporterr.id %}">
-                            <i class="bi bi-trash"></i></a>
-                        <a class="btn btn-outline-warning btn-lg" role="button"
-                           data-bs-toggle="tooltip" data-bs-placement="top"
-                           title="Gerar codigo com Classes"
-                        href="{% url 'relacionamentos:reporter_classe_gerar_codigo' reporterr.id %}">
-                            <i class="bi bi-box"></i></a>
+                        {% if perms.relacionamentos.change_reporter %}
+                            <a class="btn btn-outline-secondary btn-lg" role="button"
+                               data-bs-toggle="tooltip" data-bs-placement="top"
+                               title="Update com Classes"
+                            href="{% url 'relacionamentos:reporter_funcao_update' reporterr.id %}">
+                                <i class="bi bi-arrow-up-circle"></i></a>
+                        {% endif %}
+                        {% if perms.relacionamentos.view_reporter %}
+                            <a class="btn btn-outline-info btn-lg" role="button"
+                               data-bs-toggle="tooltip" data-bs-placement="top"
+                               title="Detalhar com Classes"
+                            href="{% url 'relacionamentos:reporter_funcao_read' reporterr.id %}">
+                                <i class="bi bi-card-list"></i></a>
+                        {% endif %}
+                        {% if perms.relacionamentos.delete_reporter %}
+                             <a class="btn btn-outline-danger btn-lg" role="button"
+                               data-bs-toggle="tooltip" data-bs-placement="top"
+                               title="Deletar com Classes"
+                            href="{% url 'relacionamentos:reporter_classe_delete' reporterr.id %}">
+                                <i class="bi bi-trash"></i></a>
+                        {% endif %}
+                        {% if perms.relacionamentos.view_reporter %}
+                            <a class="btn btn-outline-warning btn-lg" role="button"
+                               data-bs-toggle="tooltip" data-bs-placement="top"
+                               title="Gerar codigo com Classes"
+                            href="{% url 'relacionamentos:reporter_classe_gerar_codigo' reporterr.id %}">
+                                <i class="bi bi-box"></i></a>
+                        {% endif %}
 
                     </div>
                 </td>

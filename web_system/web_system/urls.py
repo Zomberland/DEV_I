@@ -41,4 +41,7 @@ urlpatterns = [
         authentication_form=CustomLoginForm)),
 
     path('accounts/', include('django.contrib.auth.urls')),
+
+    path('accounts/profile/', ProfileView.as_view(), name='profileView')
 ]
+

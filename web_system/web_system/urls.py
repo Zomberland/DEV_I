@@ -21,6 +21,7 @@ from django.conf.urls import include
 from web_system.views.contato_classe import ContatoView
 from web_system.forms.custom_login_form import CustomLoginForm
 from django.contrib.auth import views as auth_views
+from web_system.views.profile import ProfileView
 
 urlpatterns = [
     path('',views.index, name='index'),
@@ -42,6 +43,8 @@ urlpatterns = [
 
     path('accounts/', include('django.contrib.auth.urls')),
 
-    path('accounts/profile/', ProfileView.as_view(), name='profileView')
+    path('accounts/profile/', ProfileView.as_view(), name='profileView'),
+
+    path('services/', include('services.urls')),
 ]
 

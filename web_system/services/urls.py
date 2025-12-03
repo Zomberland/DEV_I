@@ -13,4 +13,6 @@ urlpatterns = [
     path('saudacao/classe', ExemplosSaudacao.as_view(), name="saudacao_classe"),
 
     path('calculo', calculo, name="calculo"),
+
+    path('reporter', ReporterListService.as_view(), name='reporter_list'),
 ]
